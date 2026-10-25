@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="cd-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="50%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#0b132b"/>
+    </linearGradient>
+    <linearGradient id="cd-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#48cae4"/>
+      <stop offset="100%" stop-color="#0077b6"/>
+    </linearGradient>
+    <linearGradient id="cd-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#915EFF"/>
+      <stop offset="100%" stop-color="#7209b7"/>
+    </linearGradient>
+    <filter id="cd-glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#cd-bg)"/>
+
+  <!-- Subtle Grid Lines -->
+  <g opacity="0.08" stroke="#48cae4" stroke-width="1">
+    <line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="320" x2="800" y2="320"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="220" y1="0" x2="220" y2="500"/>
+    <line x1="510" y1="0" x2="510" y2="500"/>
+  </g>
+
+  <!-- Top App Navigation -->
+  <rect x="0" y="0" width="800" height="56" rx="16" fill="#0f1938" fill-opacity="0.95"/>
+  <rect x="0" y="28" width="800" height="28" fill="#0f1938" fill-opacity="0.95"/>
+  <line x1="0" y1="56" x2="800" y2="56" stroke="#48cae4" stroke-opacity="0.2"/>
+
+  <!-- Logo & Title -->
+  <rect x="25" y="14" width="28" height="28" rx="7" fill="url(#cd-cyan)" filter="url(#cd-glow)"/>
+  <text x="39" y="33" font-family="'Poppins', sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle">CD</text>
+  <text x="65" y="34" font-family="'Poppins', sans-serif" font-weight="700" font-size="16" fill="#ffffff">CompanyDesk</text>
+  <text x="180" y="34" font-family="'Poppins', sans-serif" font-size="12" fill="#8ecae6">Multi-Company Employee Management</text>
+
+  <!-- Status Pill -->
+  <g transform="translate(565, 14)">
+    <rect width="210" height="28" rx="14" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-width="1"/>
+    <circle cx="14" cy="14" r="4" fill="#60a5fa"/>
+    <text x="26" y="18" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#93c5fd">DEVELOPMENT / DEPLOYMENT</text>
+  </g>
+
+  <!-- Left Sidebar (Super Admin) -->
+  <rect x="25" y="75" width="200" height="395" rx="12" fill="#131e3d" stroke="#48cae4" stroke-opacity="0.2"/>
+  <text x="40" y="105" font-family="'Poppins', sans-serif" font-weight="700" font-size="13" fill="#ffffff">Super Admin Panel</text>
+  <text x="40" y="122" font-family="'Poppins', sans-serif" font-size="10" fill="#8ecae6">Role-based Management</text>
+
+  <!-- Companies List -->
+  <g transform="translate(40, 140)">
+    <!-- Company 1 -->
+    <rect width="170" height="42" rx="8" fill="#1e2c56" stroke="#48cae4" stroke-opacity="0.4"/>
+    <circle cx="18" cy="21" r="9" fill="#0077b6"/>
+    <text x="18" y="25" font-size="9" font-weight="900" fill="#fff" text-anchor="middle">A</text>
+    <text x="36" y="20" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#fff">Acme Corp</text>
+    <text x="36" y="32" font-family="'Poppins', sans-serif" font-size="9" fill="#8ecae6">Admin Assigned</text>
+
+    <!-- Company 2 -->
+    <g transform="translate(0, 52)">
+      <rect width="170" height="42" rx="8" fill="#172244" stroke="#ffffff" stroke-opacity="0.1"/>
+      <circle cx="18" cy="21" r="9" fill="#7209b7"/>
+      <text x="18" y="25" font-size="9" font-weight="900" fill="#fff" text-anchor="middle">N</text>
+      <text x="36" y="20" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#fff">Nexus Labs</text>
+      <text x="36" y="32" font-family="'Poppins', sans-serif" font-size="9" fill="#8ecae6">Active Tenant</text>
+    </g>
+
+    <!-- Company 3 -->
+    <g transform="translate(0, 104)">
+      <rect width="170" height="42" rx="8" fill="#172244" stroke="#ffffff" stroke-opacity="0.1"/>
+      <circle cx="18" cy="21" r="9" fill="#023e8a"/>
+      <text x="18" y="25" font-size="9" font-weight="900" fill="#fff" text-anchor="middle">V</text>
+      <text x="36" y="20" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#fff">Vertex Systems</text>
+      <text x="36" y="32" font-family="'Poppins', sans-serif" font-size="9" fill="#8ecae6">Active Tenant</text>
+    </g>
+  </g>
+
+  <!-- Security & Architecture Badge -->
+  <g transform="translate(40, 350)">
+    <rect width="170" height="95" rx="8" fill="#0d152c" stroke="#915EFF" stroke-opacity="0.3"/>
+    <text x="12" y="22" font-family="'Poppins', sans-serif" font-weight="700" font-size="11" fill="#c4a9ff">Security &amp; Cloud</text>
+    <text x="12" y="42" font-family="'Poppins', sans-serif" font-size="10" fill="#8ecae6">✓ Spring Security &amp; JWT</text>
+    <text x="12" y="60" font-family="'Poppins', sans-serif" font-size="10" fill="#8ecae6">✓ TiDB Cloud / MySQL</text>
+    <text x="12" y="78" font-family="'Poppins', sans-serif" font-size="10" fill="#8ecae6">✓ Spring Data JPA</text>
+  </g>
+
+  <!-- Right Dashboard (Employee Records Table) -->
+  <rect x="240" y="75" width="535" height="395" rx="12" fill="#131e3d" stroke="#48cae4" stroke-opacity="0.2"/>
+  <text x="260" y="105" font-family="'Poppins', sans-serif" font-weight="700" font-size="14" fill="#ffffff">Company Employee Directory</text>
+  <text x="260" y="122" font-family="'Poppins', sans-serif" font-size="10" fill="#8ecae6">Role-based CRUD operations &amp; Administrator workflow</text>
+
+  <!-- Table Header -->
+  <rect x="260" y="140" width="495" height="32" rx="6" fill="#1c2b54"/>
+  <text x="280" y="160" font-family="'Poppins', sans-serif" font-weight="700" font-size="11" fill="#48cae4">NAME</text>
+  <text x="390" y="160" font-family="'Poppins', sans-serif" font-weight="700" font-size="11" fill="#48cae4">ROLE</text>
+  <text x="490" y="160" font-family="'Poppins', sans-serif" font-weight="700" font-size="11" fill="#48cae4">COMPANY</text>
+  <text x="630" y="160" font-family="'Poppins', sans-serif" font-weight="700" font-size="11" fill="#48cae4">ACTIONS</text>
+
+  <!-- Row 1 -->
+  <g transform="translate(260, 180)">
+    <rect width="495" height="42" rx="6" fill="#172346" stroke="#ffffff" stroke-opacity="0.05"/>
+    <circle cx="20" cy="21" r="10" fill="#0077b6" fill-opacity="0.4"/>
+    <text x="38" y="25" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#fff">Sarah Connor</text>
+    <text x="130" y="25" font-family="'Poppins', sans-serif" font-size="11" fill="#8ecae6">Lead Engineer</text>
+    <text x="230" y="25" font-family="'Poppins', sans-serif" font-size="11" fill="#cbd5e1">Acme Corp</text>
+    <rect x="370" y="12" width="48" height="18" rx="4" fill="#0284c7" fill-opacity="0.3"/>
+    <text x="394" y="24" font-family="'Poppins', sans-serif" font-size="9" fill="#38bdf8" text-anchor="middle">Edit</text>
+    <rect x="424" y="12" width="48" height="18" rx="4" fill="#e11d48" fill-opacity="0.2"/>
+    <text x="448" y="24" font-family="'Poppins', sans-serif" font-size="9" fill="#f43f5e" text-anchor="middle">Delete</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(260, 230)">
+    <rect width="495" height="42" rx="6" fill="#172346" stroke="#ffffff" stroke-opacity="0.05"/>
+    <circle cx="20" cy="21" r="10" fill="#7209b7" fill-opacity="0.4"/>
+    <text x="38" y="25" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#fff">David Miller</text>
+    <text x="130" y="25" font-family="'Poppins', sans-serif" font-size="11" fill="#8ecae6">Backend Dev</text>
+    <text x="230" y="25" font-family="'Poppins', sans-serif" font-size="11" fill="#cbd5e1">Nexus Labs</text>
+    <rect x="370" y="12" width="48" height="18" rx="4" fill="#0284c7" fill-opacity="0.3"/>
+    <text x="394" y="24" font-family="'Poppins', sans-serif" font-size="9" fill="#38bdf8" text-anchor="middle">Edit</text>
+    <rect x="424" y="12" width="48" height="18" rx="4" fill="#e11d48" fill-opacity="0.2"/>
+    <text x="448" y="24" font-family="'Poppins', sans-serif" font-size="9" fill="#f43f5e" text-anchor="middle">Delete</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g transform="translate(260, 280)">
+    <rect width="495" height="42" rx="6" fill="#172346" stroke="#ffffff" stroke-opacity="0.05"/>
+    <circle cx="20" cy="21" r="10" fill="#059669" fill-opacity="0.4"/>
+    <text x="38" y="25" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#fff">Elena Rostova</text>
+    <text x="130" y="25" font-family="'Poppins', sans-serif" font-size="11" fill="#8ecae6">Product Designer</text>
+    <text x="230" y="25" font-family="'Poppins', sans-serif" font-size="11" fill="#cbd5e1">Acme Corp</text>
+    <rect x="370" y="12" width="48" height="18" rx="4" fill="#0284c7" fill-opacity="0.3"/>
+    <text x="394" y="24" font-family="'Poppins', sans-serif" font-size="9" fill="#38bdf8" text-anchor="middle">Edit</text>
+    <rect x="424" y="12" width="48" height="18" rx="4" fill="#e11d48" fill-opacity="0.2"/>
+    <text x="448" y="24" font-family="'Poppins', sans-serif" font-size="9" fill="#f43f5e" text-anchor="middle">Delete</text>
+  </g>
+
+  <!-- Stack badges bottom -->
+  <g transform="translate(260, 340)">
+    <rect width="495" height="105" rx="8" fill="#0f1938" stroke="#48cae4" stroke-opacity="0.2"/>
+    <text x="16" y="25" font-family="'Poppins', sans-serif" font-weight="700" font-size="12" fill="#ffffff">Architecture Highlight</text>
+    <text x="16" y="45" font-family="'Poppins', sans-serif" font-size="10" fill="#8ecae6">Layered architecture separating Super Admin governance from Company Admin operational workflows.</text>
+    <text x="16" y="65" font-family="'Poppins', sans-serif" font-size="10" fill="#8ecae6">REST endpoints connected via Axios to Spring Boot backend with Hibernate entity persistence.</text>
+    <text x="16" y="88" font-family="'Poppins', sans-serif" font-size="10" font-weight="600" fill="#48cae4">React.js • Spring Boot • Spring Security JWT • MySQL/TiDB Cloud • Maven</text>
+  </g>
+</svg>

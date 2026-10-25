@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="java-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1c2e"/>
+      <stop offset="100%" stop-color="#0c0e1a"/>
+    </linearGradient>
+    <linearGradient id="steam-orange" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f89820"/>
+      <stop offset="100%" stop-color="#e76f00"/>
+    </linearGradient>
+    <linearGradient id="cup-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5382a1"/>
+      <stop offset="100%" stop-color="#007396"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="url(#java-grad)" stroke="rgba(248, 152, 32, 0.3)" stroke-width="2"/>
+  
+  <!-- Java Cup & Steam Graphics -->
+  <g transform="translate(48, 36) scale(0.625)">
+    <!-- Steam -->
+    <path d="M125 15 C135 45 95 65 110 95 C118 110 130 115 135 125" fill="none" stroke="url(#steam-orange)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M155 10 C170 45 125 70 145 105 C152 118 165 122 170 135" fill="none" stroke="url(#steam-orange)" stroke-width="12" stroke-linecap="round"/>
+    <!-- Cup Body -->
+    <path d="M60 145 C60 215 95 240 180 240 C240 240 255 210 255 145 Z" fill="url(#cup-blue)"/>
+    <!-- Cup Handle -->
+    <path d="M235 155 C275 155 285 200 235 215" fill="none" stroke="url(#cup-blue)" stroke-width="14" stroke-linecap="round"/>
+    <!-- Base Plate -->
+    <path d="M45 255 C90 275 220 275 265 255" fill="none" stroke="url(#cup-blue)" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <text x="128" y="222" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="700" font-size="28" fill="#ffffff" letter-spacing="2">JAVA</text>
+</svg>

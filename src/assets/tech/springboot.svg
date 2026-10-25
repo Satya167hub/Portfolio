@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="spring-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142416"/>
+      <stop offset="100%" stop-color="#0a120c"/>
+    </linearGradient>
+    <linearGradient id="spring-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6db33f"/>
+      <stop offset="100%" stop-color="#498528"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="url(#spring-bg)" stroke="rgba(109, 179, 63, 0.3)" stroke-width="2"/>
+  
+  <!-- Spring Leaf -->
+  <g transform="translate(68, 38) scale(0.48)">
+    <path d="M236.4 17.6C221.7 4.9 203.2 0 184.2 0c-44.5 0-85.3 26.6-104 67.9-20.1 44.5-12.8 97.4 18.5 134.4L18 283.4c-8.5 8.5-8.5 22.3 0 30.8 4.2 4.2 9.8 6.4 15.4 6.4s11.2-2.1 15.4-6.4l81.1-81.1c37 31.3 89.9 38.6 134.4 18.5 41.3-18.7 67.9-59.5 67.9-104 0-19-4.9-37.5-17.6-52.2L236.4 17.6zm-17.8 178.6c-33.8 15.3-74.2 9.7-102.4-14.2l96.7-96.7c8.5-8.5 8.5-22.3 0-30.8-8.5-8.5-22.3-8.5-30.8 0l-96.7 96.7c-23.9-28.2-29.5-68.6-14.2-102.4 14.3-31.5 45.4-51.8 79.2-51.8 14.5 0 28.6 3.7 39.8 13.4l78.2 78.2c9.7 11.2 13.4 25.3 13.4 39.8 0 33.8-20.3 64.9-51.8 79.2z" fill="url(#spring-green)"/>
+  </g>
+  
+  <text x="128" y="222" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="700" font-size="24" fill="#6db33f" letter-spacing="1.5">SPRING</text>
+</svg>

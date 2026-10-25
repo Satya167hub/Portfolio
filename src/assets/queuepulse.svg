@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="qp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1024"/>
+      <stop offset="50%" stop-color="#141a38"/>
+      <stop offset="100%" stop-color="#090d1f"/>
+    </linearGradient>
+    <linearGradient id="qp-violet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="qp-amber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="qp-glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#qp-bg)"/>
+
+  <!-- Grid Lines -->
+  <g opacity="0.06" stroke="#a855f7" stroke-width="1">
+    <line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="320" x2="800" y2="320"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="260" y1="0" x2="260" y2="500"/>
+    <line x1="530" y1="0" x2="530" y2="500"/>
+  </g>
+
+  <!-- Navigation Bar -->
+  <rect x="0" y="0" width="800" height="56" rx="16" fill="#101530" fill-opacity="0.95"/>
+  <rect x="0" y="28" width="800" height="28" fill="#101530" fill-opacity="0.95"/>
+  <line x1="0" y1="56" x2="800" y2="56" stroke="#a855f7" stroke-opacity="0.2"/>
+
+  <!-- Logo -->
+  <circle cx="38" cy="28" r="14" fill="url(#qp-violet)" filter="url(#qp-glow)"/>
+  <text x="38" y="33" font-family="'Poppins', sans-serif" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle">QP</text>
+  <text x="65" y="34" font-family="'Poppins', sans-serif" font-weight="700" font-size="16" fill="#ffffff">QueuePulse</text>
+  <text x="175" y="34" font-family="'Poppins', sans-serif" font-size="12" fill="#c084fc">Smart Queue Management System</text>
+
+  <!-- Status Pill -->
+  <g transform="translate(620, 14)">
+    <rect width="150" height="28" rx="14" fill="#a855f7" fill-opacity="0.15" stroke="#a855f7" stroke-width="1"/>
+    <circle cx="16" cy="14" r="4" fill="#d8b4fe"/>
+    <text x="28" y="18" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#d8b4fe">PLANNED PROJECT</text>
+  </g>
+
+  <!-- Center Card: Concept & Architecture Blueprint -->
+  <rect x="35" y="80" width="730" height="390" rx="14" fill="#131938" stroke="#a855f7" stroke-opacity="0.25"/>
+
+  <!-- Top Metric Cards -->
+  <g transform="translate(60, 110)">
+    <!-- Metric 1: Digital Tokens -->
+    <rect width="200" height="90" rx="10" fill="#1b2247" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="18" y="32" font-family="'Poppins', sans-serif" font-size="11" fill="#c084fc">Digital Token Issuance</text>
+    <text x="18" y="62" font-family="'Poppins', sans-serif" font-size="22" font-weight="800" fill="#ffffff">#A-142</text>
+    <text x="18" y="80" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">Automated SMS / In-App Queueing</text>
+
+    <!-- Metric 2: Wait Time -->
+    <g transform="translate(225, 0)">
+      <rect width="200" height="90" rx="10" fill="#1b2247" stroke="#ffffff" stroke-opacity="0.08"/>
+      <text x="18" y="32" font-family="'Poppins', sans-serif" font-size="11" fill="#f59e0b">Est. Wait-Time Algorithm</text>
+      <text x="18" y="62" font-family="'Poppins', sans-serif" font-size="22" font-weight="800" fill="#ffffff">~6 mins</text>
+      <text x="18" y="80" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">Dynamic pacing calculation</text>
+    </g>
+
+    <!-- Metric 3: Counter Allocation -->
+    <g transform="translate(450, 0)">
+      <rect width="230" height="90" rx="10" fill="#1b2247" stroke="#ffffff" stroke-opacity="0.08"/>
+      <text x="18" y="32" font-family="'Poppins', sans-serif" font-size="11" fill="#34d399">Counter Allocation</text>
+      <text x="18" y="62" font-family="'Poppins', sans-serif" font-size="22" font-weight="800" fill="#ffffff">Counter 03</text>
+      <text x="18" y="80" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">Load balanced service routing</text>
+    </g>
+  </g>
+
+  <!-- Lower Architecture Blueprint -->
+  <g transform="translate(60, 230)">
+    <rect width="680" height="215" rx="10" fill="#171e3d" stroke="#a855f7" stroke-opacity="0.2"/>
+    <text x="25" y="35" font-family="'Poppins', sans-serif" font-weight="700" font-size="14" fill="#ffffff">Upcoming System Architecture Blueprint</text>
+    <text x="25" y="55" font-family="'Poppins', sans-serif" font-size="11" fill="#c084fc">Planned end-to-end full stack architecture for service counters &amp; patient/visitor queuing</text>
+
+    <!-- 3 Pipeline Pillars -->
+    <g transform="translate(25, 75)">
+      <!-- Pillar 1 -->
+      <rect width="195" height="115" rx="8" fill="#101530" stroke="#ffffff" stroke-opacity="0.05"/>
+      <text x="14" y="26" font-family="'Poppins', sans-serif" font-weight="600" font-size="12" fill="#fff">1. Token Generation</text>
+      <text x="14" y="48" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">• Virtual Ticket kiosk</text>
+      <text x="14" y="68" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">• Service categorization</text>
+      <text x="14" y="88" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">• Priority assignment</text>
+
+      <!-- Pillar 2 -->
+      <g transform="translate(215, 0)">
+        <rect width="195" height="115" rx="8" fill="#101530" stroke="#ffffff" stroke-opacity="0.05"/>
+        <text x="14" y="26" font-family="'Poppins', sans-serif" font-weight="600" font-size="12" fill="#fff">2. Spring Boot Core</text>
+        <text x="14" y="48" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">• FIFO queue management</text>
+        <text x="14" y="68" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">• Wait time estimator</text>
+        <text x="14" y="88" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">• Real-time state updates</text>
+      </g>
+
+      <!-- Pillar 3 -->
+      <g transform="translate(430, 0)">
+        <rect width="195" height="115" rx="8" fill="#101530" stroke="#ffffff" stroke-opacity="0.05"/>
+        <text x="14" y="26" font-family="'Poppins', sans-serif" font-weight="600" font-size="12" fill="#fff">3. MySQL Persistence</text>
+        <text x="14" y="48" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">• Counter logs &amp; audits</text>
+        <text x="14" y="68" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">• Daily throughput analytics</text>
+        <text x="14" y="88" font-family="'Poppins', sans-serif" font-size="10" fill="#a1a1aa">• Relational history tables</text>
+      </g>
+    </g>
+  </g>
+</svg>

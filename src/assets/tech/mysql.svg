@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="mysql-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#122538"/>
+      <stop offset="100%" stop-color="#0a1520"/>
+    </linearGradient>
+    <linearGradient id="mysql-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f29111"/>
+      <stop offset="100%" stop-color="#d67b04"/>
+    </linearGradient>
+    <linearGradient id="mysql-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00758f"/>
+      <stop offset="100%" stop-color="#005a6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="url(#mysql-bg)" stroke="rgba(0, 117, 143, 0.4)" stroke-width="2"/>
+  
+  <!-- Database Stack Icon -->
+  <g transform="translate(68, 45)">
+    <ellipse cx="60" cy="25" rx="55" ry="18" fill="url(#mysql-orange)"/>
+    <path d="M5 25 v30 c0 10 25 18 55 18 s55 -8 55 -18 v-30 Z" fill="url(#mysql-blue)" opacity="0.9"/>
+    <path d="M5 65 v30 c0 10 25 18 55 18 s55 -8 55 -18 v-30 Z" fill="url(#mysql-blue)"/>
+    <ellipse cx="60" cy="55" rx="55" ry="18" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <ellipse cx="60" cy="95" rx="55" ry="18" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  </g>
+  
+  <text x="128" y="222" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="700" font-size="26" fill="#f29111" letter-spacing="2">MySQL</text>
+</svg>
