@@ -2,9 +2,10 @@
 
 Welcome to my personal developer portfolio! I'm Satyajeet, an aspiring Full Stack Developer interested in building modern, interactive web applications.
 
-## 🌐 Portfolio
+## 🌐 Live Portfolio
 
-**Live Website:** Coming Soon
+Visit my portfolio:
+https://satya167hub.github.io/Portfolio/
 
 ## 👨‍💻 About Me
 
